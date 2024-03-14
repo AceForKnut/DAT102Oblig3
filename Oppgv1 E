@@ -1,0 +1,13 @@
+Oppgave 1 E)
+
+HashSet: 
+Kjøretiden for contains() i HashSet er O(1) i beste tilfelle og O(n) i verste tilfelle. 
+Dette skyldes hashing-teknikken som brukes i HashSet, som gir en konstant tidskompleksitet for søk i gjennomsnitt. 
+Ytelsen kan forverres i tilfeller av kollisjoner, som kan føre til lineær søketid.
+
+TreeSet:
+Kjøretiden for contains() i TreeSet er O(log n) i både beste og verste tilfelle. 
+Dette skyldes at TreeSet implementerer et rødt-svart tre, som gir logaritmisk tid for søk, både i beste og verste tilfelle.
+
+Det er forskjeller mellom disse datastrukturene, når det gjelder søketid. Hashset har vanligvis bedre ytelse i gjennomsnitt og beste tilfeller
+på grunn av konstant søketid mens TreeSet har mer forutsigbar ytelse med log tid uavhengig av datafordeling.

@@ -1,0 +1,48 @@
+Oppgave 1 D)
+
+i. boolean inneholder(T element);
+
+For TabellMengde OG LenketMengde:
+Best tilfellet: O(1) siden elementet kan befinne seg på begynnelsen av listen.
+Verste tilfellet: O(n) elementet kan enten ikke befinne seg i listen eller ligger helt på slutten, så det må itereres gjennom hele listen.
+
+ii. boolean erDelmengdeAv(MengdeADT<T> annenMengde);
+
+For TabellMengde OG LenketMengde:
+Beste tilfellet: O(n) metoden kan gå gjennom hvert element i tabellen og sammenligne med annen tabell. kan returnere falsk tidligere så eg ville
+sagt at det teknisk sett kunne vært O(1)
+Verste tilfellet O(n^2) sammenligner alle elementer med hverandre som medfører kvadratisk tidskompleksitet
+
+
+iii. boolean erLik(MengdeADT<T> annenMengde);
+
+For TabellMengde OG LenketMengde:
+Beste tilfellet: O(n log n) Sorterer begge settene og sammenligner deretter elementene for likhet
+Verste tilfellet: O(n^2)  tilsvarende lik med erDelmengdeAv metoden at det medfører kvadratisk tidskompleksitet
+
+iv. MengdeADT<T> union(MengdeADT<T> annenMengde);
+
+For TabellMengde:
+Beste tilfellet: O(n) Hvis det ikke er noen feller elementer mellom de to settene, må den gå gjennom alle elementene i begge settene for å danne
+unionen
+Verste tilfellet: O(n^2) Hvis alle elementene i ett sett allerede er til stede i ddet andre settet kan tillegg av elementer fra det andre til
+det første kreve innvendige iterasjoner.
+
+For LenketMengde:
+Beste tilfellet: O(n) Tilsvarende TabellMengde, men traversering gjennom lenkede lister kan være tregere på grunn av pekerbehandling
+Verste tilfellet: O(n^2) pekerbehandling
+
+
+v. T fjern(T element);
+
+For TabellMengde OG LenketMengde:
+Beste tilfellet: O(1) Hvis elementet som skal fjernes, blir funnet i begynnelsen av listen/tabellen.
+Verste tilfellet: O(n) Hvis elementet er på slutten av listen/tabellen eller ikke er til stede, 
+kreves det gjennomgang av alle elementene for å finne og fjerne.
+
+
+
+
+
+
+
